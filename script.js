@@ -4,6 +4,7 @@ const  size2=document.querySelector("#size2");
 const  size3=document.querySelector("#size3");
 const colors = document.querySelector("#colors");
 
+
 let color = "#000000";
 
 colors.addEventListener('input', (e) => {
@@ -47,10 +48,17 @@ function changeSize(num){
         
         
         pixel.classList.add("pixel");
-       
-        pixel.addEventListener("click",function(){
-            pixel.style.backgroundColor=color;
-            });
+
+        
+        
+        pixel.addEventListener("mouseover",function(){
+             
+              pixel.style.backgroundColor=color;
+             
+              pixel.style.opacity=`${ (parseFloat(pixel.style.opacity)||0)+0.1}`;  
+              
+        });
+        
     
         container.appendChild(pixel);
     }
