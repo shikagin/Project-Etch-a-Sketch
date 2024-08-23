@@ -60,7 +60,11 @@ footer{
     background-color: #40534C;
 
 }
-
+p{
+    font-size: x-large;
+    font-weight: bold;
+    color: #1A3636;
+}
 .pixel{
 
     border: none;
